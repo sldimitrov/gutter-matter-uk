@@ -58,7 +58,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:+441234567890" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
+            <a href="tel:+07307265427" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4 mr-2" />
               Call Us Today
             </a>
@@ -101,7 +101,7 @@ const Header = () => {
               ))}
               <div className="pt-4 px-4 space-y-2">
                 <a
-                  href="tel:+441234567890"
+                  href="tel:+07307265427"
                   className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Phone className="w-4 h-4 mr-2" />
