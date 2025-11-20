@@ -177,8 +177,8 @@ const CompanyInfo = () => {
                 <CardContent className="pt-6 text-center">
                   <Phone className="w-8 h-8 text-primary mx-auto mb-3" />
                   <p className="font-semibold mb-2">Call Us</p>
-                  <a href="tel:+07307265427" className="text-primary hover:underline">
-                    07307265427
+                  <a href="tel:+07586366303" className="text-primary hover:underline">
+                    07586366303
                   </a>
                 </CardContent>
               </Card>

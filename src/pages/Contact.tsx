@@ -110,7 +110,7 @@ const Contact = () => {
                       <FormItem>
                         <FormLabel>Phone Number *</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="07307265427" {...field} />
+                          <Input type="tel" placeholder="07586366303" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -155,8 +155,8 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-primary mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <a href="tel:+07307265427" className="text-primary hover:underline">
-                        07307265427
+                      <a href="tel:+07586366303" className="text-primary hover:underline">
+                        07586366303
                       </a>
                       <p className="text-sm text-muted-foreground mt-1">24-hour emergency callout available</p>
                     </div>
