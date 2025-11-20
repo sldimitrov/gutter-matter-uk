@@ -110,7 +110,7 @@ const Contact = () => {
                       <FormItem>
                         <FormLabel>Phone Number *</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="01234 567890" {...field} />
+                          <Input type="tel" placeholder="07586366303" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -155,8 +155,8 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-primary mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <a href="tel:+441234567890" className="text-primary hover:underline">
-                        01234 567 890
+                      <a href="tel:+07586366303" className="text-primary hover:underline">
+                        07586366303
                       </a>
                       <p className="text-sm text-muted-foreground mt-1">24-hour emergency callout available</p>
                     </div>
@@ -219,7 +219,7 @@ const Contact = () => {
                   View our verified reviews and full business profile on Checkatrade
                 </p>
                 <a
-                  href="https://www.checkatrade.com"
+                  href="https://www.checkatrade.com/trades/guttermatterltd"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-semibold"

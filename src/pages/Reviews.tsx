@@ -114,7 +114,7 @@ const Reviews = () => {
               </div>
               <p className="text-muted-foreground mb-4">Based on verified Checkatrade reviews</p>
               <a
-                href="https://www.checkatrade.com"
+                href="https://www.checkatrade.com/trades/guttermatterltd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline font-semibold inline-block"

@@ -141,7 +141,7 @@ const About = () => {
               </div>
               <div className="text-center">
                 <a
-                  href="https://www.checkatrade.com"
+                  href="https://www.checkatrade.com/trades/guttermatterltd"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-primary hover:underline font-semibold"

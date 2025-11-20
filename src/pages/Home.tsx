@@ -33,7 +33,7 @@ const Home = () => {
                 <Link to="/contact">Get Your Free Estimate</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="text-lg px-8">
-                <a href="tel:+441234567890">
+                <a href="tel:+07586366303">
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now
                 </a>
@@ -202,7 +202,7 @@ const Home = () => {
               <Link to="/contact">Request Free Estimate</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <a href="https://www.checkatrade.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.checkatrade.com/trades/guttermatterltd" target="_blank" rel="noopener noreferrer">
                 View Checkatrade Profile
               </a>
             </Button>
