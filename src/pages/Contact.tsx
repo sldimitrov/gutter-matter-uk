@@ -1,3 +1,4 @@
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -40,17 +41,36 @@ const Contact = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    console.log("Form submitted:", values);
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you within 24 hours.",
-    });
-    
-    form.reset();
+
+    try {
+      emailjs.init("ZNA6rCUzJJOCR6CQq");
+
+      await emailjs.send(
+          "service_a17gnnp`",        // <- From EmailJS dashboard
+          "template_84nbcut",       // <- Your template
+          {
+            from_name: values.name,
+            from_email: values.email,
+            phone: values.phone,
+            message: values.message,
+          }
+      );
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for contacting us. We'll get back to you within 24 hours.",
+      });
+
+      form.reset();
+    } catch (error) {
+      console.error(error);
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+      });
+    }
+
     setIsSubmitting(false);
   };
 

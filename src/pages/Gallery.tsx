@@ -1,52 +1,52 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import {Dialog, DialogContent, DialogTitle} from "@/components/ui/dialog";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  // Placeholder data - in production, these would be actual before/after images
+  // TODO: Finish the gallery
   const galleryItems = [
     {
       id: 1,
       title: "Internal Gutter Cleaning - 4 Storey Building",
-      before: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800",
-      after: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      before: "/assets/gallery/IMG-20250504-WA0008.jpg",
+      after: "/assets/gallery/IMG-20250504-WA0006.jpg",
       location: "Tunbridge Wells",
     },
     {
       id: 2,
       title: "Fascia & Soffit Replacement",
-      before: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800",
-      after: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      before: "/assets/gallery/IMG_4680.JPEG",
+      after: "/assets/gallery/IMG_4681.JPEG",
       location: "Kent",
     },
     {
       id: 3,
       title: "Commercial Gutter Repair",
-      before: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800",
-      after: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      before: "/assets/gallery/IMG_5324.JPEG",
+      after: "/assets/gallery/IMG_5342.JPEG",
       location: "Tunbridge Wells",
     },
     {
       id: 4,
       title: "Residential Gutter Installation",
-      before: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800",
-      after: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      before: "/assets/gallery/IMG_5613.JPEG",
+      after: "/assets/gallery/IMG_5620.JPEG",
       location: "Kent",
     },
     {
       id: 5,
       title: "External Gutter & Fascia Clean",
-      before: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800",
-      after: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      before: "/assets/gallery/second/IMG_5617.JPEG",
+      after: "/assets/gallery/second/IMG_5621.JPEG",
       location: "Tunbridge Wells",
     },
     {
       id: 6,
       title: "Gutter Guard Installation",
-      before: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800",
-      after: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      before: "/assets/gallery/third/IMG_0072.JPEG",
+      after: "/assets/gallery/third/IMG_0076.JPEG",
       location: "Kent",
     },
   ];
@@ -111,12 +111,12 @@ const Gallery = () => {
 
       {/* Lightbox Dialog */}
       <Dialog open={selectedImage !== null} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="max-w-5xl">
+        <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
           {selectedImage && (
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold">
+              <DialogTitle className="text-2xl font-bold">
                 {galleryItems.find((item) => item.id === selectedImage)?.title}
-              </h3>
+              </DialogTitle>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <div className="mb-2 font-semibold text-destructive">Before</div>
