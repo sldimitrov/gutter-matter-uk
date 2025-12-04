@@ -111,7 +111,7 @@ const Gallery = () => {
 
       {/* Lightbox Dialog */}
       <Dialog open={selectedImage !== null} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="max-w-5xl">
+        <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
           {selectedImage && (
             <div className="space-y-4">
               <h3 className="text-2xl font-bold">
