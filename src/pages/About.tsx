@@ -23,7 +23,7 @@ const About = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                 <p className="text-muted-foreground mb-4">
-                  Gutter Matter Ltd specialises in all aspects of guttering — from cleaning to full fascia, soffit, and gutter repair or replacement. Founded and led by Mr. Stoyan Velev, we've built our reputation on reliability, quality workmanship, and exceptional customer service.
+                  Gutter Matter Ltd specialises in all aspects of guttering - from cleaning to full fascia, soffit, and gutter repair or replacement. Founded and led by Mr. Stoyan Velev, we've built our reputation on reliability, quality workmanship, and exceptional customer service.
                 </p>
                 <p className="text-muted-foreground mb-4">
                   With three years on Checkatrade and having passed 12 comprehensive vetting checks, we're proud to be one of the most trusted guttering specialists in the Tunbridge Wells area.
