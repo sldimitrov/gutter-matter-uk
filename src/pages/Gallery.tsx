@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import {Dialog, DialogContent, DialogTitle} from "@/components/ui/dialog";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  // Placeholder data - in production, these would be actual before/after images
+  // TODO: Finish the gallery
   const galleryItems = [
     {
       id: 1,
@@ -114,9 +114,9 @@ const Gallery = () => {
         <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
           {selectedImage && (
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold">
+              <DialogTitle className="text-2xl font-bold">
                 {galleryItems.find((item) => item.id === selectedImage)?.title}
-              </h3>
+              </DialogTitle>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <div className="mb-2 font-semibold text-destructive">Before</div>
