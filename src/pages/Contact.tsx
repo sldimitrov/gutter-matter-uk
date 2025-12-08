@@ -46,7 +46,7 @@ const Contact = () => {
       emailjs.init("ZNA6rCUzJJOCR6CQq");
 
       await emailjs.send(
-          "service_a17gnnp`",        // <- From EmailJS dashboard
+          "service_1l3zhon",        // <- From EmailJS dashboard
           "template_84nbcut",       // <- Your template
           {
             from_name: values.name,
