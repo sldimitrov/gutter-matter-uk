@@ -13,7 +13,7 @@ const Footer = () => {
               Professional guttering services in Tunbridge Wells and surrounding areas. Fully insured up to £5,000,000.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-background/80 hover:text-background transition-colors">
+              <a href="https://www.facebook.com/guttermatter" target="_blank" className="text-background/80 hover:text-background transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="text-background/80 hover:text-background transition-colors">
