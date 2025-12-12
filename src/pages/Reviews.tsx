@@ -68,7 +68,7 @@ const Reviews = () => {
                 <Star key={star} className="w-8 h-8 fill-primary text-primary" />
               ))}
             </div>
-            <p className="text-2xl font-semibold">5.0 Average Rating on Checkatrade</p>
+            <p className="text-2xl font-semibold">9.9 Average Rating on Checkatrade</p>
           </div>
         </div>
       </section>
@@ -110,7 +110,7 @@ const Reviews = () => {
             <div className="bg-background p-8 rounded-lg inline-block">
               <div className="flex items-center justify-center gap-2 mb-4">
                 <Star className="w-12 h-12 fill-primary text-primary" />
-                <span className="text-4xl font-bold">5.0</span>
+                <span className="text-4xl font-bold">9.9</span>
               </div>
               <p className="text-muted-foreground mb-4">Based on verified Checkatrade reviews</p>
               <a
