@@ -3,7 +3,7 @@ const galleryItems = [
         id: 1,
         title: "Internal Gutter Cleaning - 4 Storey Building",
         group: "group1",
-        front: "/assets/album/five/0d0a33ea-2ebc-48eb-b7bf-3493c341349f.jpg",
+        front: "/assets/album/five/63.jpeg",
         location: "Tunbridge Wells",
     },
     {
