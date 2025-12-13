@@ -35,7 +35,7 @@ const Gallery = () => {
                       <img
                           src={item.front}
                           alt={item.title}
-                          className="w-full h-60 object-cover"
+                          className="w-full h-64 object-cover"
                       />
                       <div className="p-4">
                         <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
