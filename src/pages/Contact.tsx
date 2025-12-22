@@ -185,8 +185,8 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-primary mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <a href="mailto:info@guttermatter.co.uk" className="text-primary hover:underline break-all">
-                        info@guttermatter.co.uk
+                      <a href="mailto:info@guttermatter.com" className="text-primary hover:underline break-all">
+                        info@guttermatter.com
                       </a>
                     </div>
                   </div>

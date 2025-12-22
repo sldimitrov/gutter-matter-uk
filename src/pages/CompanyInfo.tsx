@@ -186,8 +186,8 @@ const CompanyInfo = () => {
                 <CardContent className="pt-6 text-center">
                   <Mail className="w-8 h-8 text-primary mx-auto mb-3" />
                   <p className="font-semibold mb-2">Email Us</p>
-                  <a href="mailto:info@guttermatter.co.uk" className="text-primary hover:underline break-all">
-                    info@guttermatter.co.uk
+                  <a href="mailto:info@guttermatter.com" className="text-primary hover:underline break-all">
+                    info@guttermatter.com
                   </a>
                 </CardContent>
               </Card>

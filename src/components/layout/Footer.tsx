@@ -85,8 +85,8 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Mail className="w-5 h-5 mr-2 flex-shrink-0 text-background/80" />
-                <a href="mailto:info@guttermatter.co.uk" className="text-background/80 hover:text-background transition-colors">
-                  info@guttermatter.co.uk
+                <a href="mailto:info@guttermatter.com" className="text-background/80 hover:text-background transition-colors">
+                  info@guttermatter.com
                 </a>
               </li>
               <li className="flex items-start">
