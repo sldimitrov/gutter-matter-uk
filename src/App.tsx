@@ -15,6 +15,7 @@ import Reviews from "./pages/Reviews";
 import CompanyInfo from "./pages/CompanyInfo";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import { Analytics } from "@vercel/analytics/react"
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => {
           <TooltipProvider>
             <Toaster/>
             <Sonner/>
+            <Analytics/>
             <BrowserRouter>
               <Header/>
               <ScrollToTopWrapper/>
