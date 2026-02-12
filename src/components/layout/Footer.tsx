@@ -16,12 +16,12 @@ const Footer = () => {
               <a href="https://www.facebook.com/guttermatter" target="_blank" className="text-background/80 hover:text-background transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-background/80 hover:text-background transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-background/80 hover:text-background transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
+              {/*<a href="#" className="text-background/80 hover:text-background transition-colors">*/}
+              {/*  <Instagram className="w-5 h-5" />*/}
+              {/*</a>*/}
+              {/*<a href="#" className="text-background/80 hover:text-background transition-colors">*/}
+              {/*  <Linkedin className="w-5 h-5" />*/}
+              {/*</a>*/}
             </div>
           </div>
 

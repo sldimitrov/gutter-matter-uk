@@ -9,7 +9,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About Gutter Matter Ltd</h1>
             <p className="text-xl text-muted-foreground">
-              Your trusted partner for professional guttering services in Tunbridge Wells and surrounding areas
+              Your trusted partner for professional gutters and windows cleaning  services
             </p>
           </div>
         </div>
@@ -23,13 +23,25 @@ const About = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                 <p className="text-muted-foreground mb-4">
-                  Gutter Matter Ltd specialises in all aspects of guttering - from cleaning to full fascia, soffit, and gutter repair or replacement. Founded and led by Mr. Stoyan Velev, we've built our reputation on reliability, quality workmanship, and exceptional customer service.
+                  At Gutter Matter Ltd, we’re proud to be a family-run business built on trust, hard work, and doing the job right the first time.
                 </p>
-                <p className="text-muted-foreground mb-4">
-                  With three years on Checkatrade and having passed 12 comprehensive vetting checks, we're proud to be one of the most trusted guttering specialists in the Tunbridge Wells area.
+                <p className="text-muted-foreground mb-2">
+                  Led by Stoyan Velev, our company is guided by traditional values — honesty, reliability, and genuine pride in every piece of work we carry out. We believe in straightforward advice, fair pricing, and treating every customer with respect.
+                </p>
+                <p className="text-muted-foreground mb-2">
+                  We specialise in all aspects of guttering, from routine cleaning to full fascia, soffit, and gutter repairs or replacements. Alongside this, we also provide professional window cleaning and conservatory cleaning, helping you keep your entire property looking its best.
+                </p>
+                <p className="text-muted-foreground mb-2">
+                  Every home and building is treated with the same care and attention we would give our own. Clean, tidy workmanship and clear communication come as standard.
+                </p>
+                <p className="text-muted-foreground mb-2">
+                  Over the past three years on Checkatrade, we’ve worked hard to earn a strong reputation for reliability and quality. After successfully passing 12 comprehensive vetting checks, we’re proud to be recognised as a trusted specialist.
+                </p>
+                <p className="text-muted-foreground mb-2">
+                  We also provide professional internal gutter cleaning for residential and commercial properties up to four storeys high — safely completed without the need for scaffolding. Every job includes before-and-after photos and a full report, giving you complete peace of mind.
                 </p>
                 <p className="text-muted-foreground">
-                  We provide full internal gutter cleaning for commercial and residential buildings up to 4 storeys without scaffolding, including before/after pictures and a full report for every job.
+                  For us, it’s not just about gutters — it’s about looking after our community, one property at a time.
                 </p>
               </div>
               <div className="bg-secondary p-8 rounded-lg">

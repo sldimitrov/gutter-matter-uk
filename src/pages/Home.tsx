@@ -23,7 +23,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Professional Guttering Services in <span className="text-primary">Tunbridge Wells</span>
+              Professional Gutters and windows cleaning services in <span className="text-primary">your area</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Expert gutter cleaning, repair, and installation. Fully insured up to £5,000,000 with 24-hour callout available.
