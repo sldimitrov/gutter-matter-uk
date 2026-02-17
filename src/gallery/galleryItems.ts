@@ -1,9 +1,9 @@
 const galleryItems = [
     {
         id: 1,
-        title: "Internal Gutter Cleaning - 4 Storey Building",
+        title: "Internal Gutter Cleaning",
         group: "group1",
-        front: "/assets/album/five/63.jpeg",
+        front: "/assets/album/five/IMG_1360.PNG",
         location: "Tunbridge Wells",
     },
     {
@@ -14,24 +14,17 @@ const galleryItems = [
         location: "Kent",
     },
     {
-        id: 4,
-        title: "Residential Gutter Installation",
-        group: "group4",
-        front: "/assets/album/first/2ed7cc6c-4f2b-4bcc-a003-0bd7437ce141.jpg",
-        location: "Kent",
-    },
-    {
         id: 5,
         title: "Gutter Installation",
-        group: "group5",
-        front: "/assets/album/first/3b2d1294-351e-4b3f-9a17-d940094f76eb.jpg",
+        group: "group4",
+        front: "/assets/album/zero/before_after_collage_11.png",
         location: "Tunbridge Wells",
     },
     {
         id: 6,
         title: "Conservatory Roof Cleaning",
         group: "group6",
-        front: "/assets/album/four/IMG-20250504-WA0006.jpg",
+        front: "/assets/album/four/before_and_after.png",
         location: "Kent",
     },
     {
