@@ -14,42 +14,65 @@ import {
   Camera,
   CheckCircle2,
 } from "lucide-react";
+import FrontImage from '/assets/gutter_matter_website_cover.png'
 
 const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 via-background to-background pt-32 pb-20">
+      <section className="relative pt-32 pb-24 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 -z-10">
+          <img
+              src={FrontImage}
+              alt="Gutter Matter team working"
+              className="w-full h-full object-cover scale-105"
+          />
+          {/* Dark overlay for readability */}
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
+
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Professional Gutters and windows cleaning services in <span className="text-primary">your area</span>
+              Professional Gutter & Window Cleaning Services in{" "}
+              <span className="text-primary">Your Area</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Expert gutter cleaning, repair, and installation. Fully insured up to £5,000,000 with 24-hour callout available.
+
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-white/90">
+              Expert gutter cleaning, repair, and installation.
+              Fully insured up to £5,000,000 with 24-hour callout available.
             </p>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
                 <Link to="/contact">Get Your Free Estimate</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-lg px-8">
+
+              <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="text-lg px-8 border-white text-white bg-transparent hover:bg-white hover:text-black"
+              >
                 <a href="tel:+07586366303">
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now
                 </a>
               </Button>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm">
+
+            <div className="mt-10 flex flex-wrap justify-center gap-6 text-sm text-white/90">
               <div className="flex items-center">
-                <CheckCircle2 className="w-5 h-5 text-success mr-2" />
+                <CheckCircle2 className="w-5 h-5 text-green-400 mr-2" />
                 <span>Free Estimates</span>
               </div>
               <div className="flex items-center">
-                <CheckCircle2 className="w-5 h-5 text-success mr-2" />
+                <CheckCircle2 className="w-5 h-5 text-green-400 mr-2" />
                 <span>24-Hour Callout</span>
               </div>
               <div className="flex items-center">
-                <CheckCircle2 className="w-5 h-5 text-success mr-2" />
+                <CheckCircle2 className="w-5 h-5 text-green-400 mr-2" />
                 <span>£5M Insured</span>
               </div>
             </div>
