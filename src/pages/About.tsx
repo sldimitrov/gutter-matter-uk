@@ -38,7 +38,7 @@ const About = () => {
                   Over the past three years on Checkatrade, we’ve worked hard to earn a strong reputation for reliability and quality. After successfully passing 12 comprehensive vetting checks, we’re proud to be recognised as a trusted specialist.
                 </p>
                 <p className="text-muted-foreground mb-2">
-                  We also provide professional internal gutter cleaning for residential and commercial properties up to four storeys high — safely completed without the need for scaffolding. Every job includes before-and-after photos and a full report, giving you complete peace of mind.
+                  We also provide professional internal gutter cleaning for residential and commercial properties - safely completed without the need for scaffolding. Every job includes before-and-after photos and a full report, giving you complete peace of mind.
                 </p>
                 <p className="text-muted-foreground">
                   For us, it’s not just about gutters — it’s about looking after our community, one property at a time.
