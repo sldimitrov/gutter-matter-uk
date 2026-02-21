@@ -103,6 +103,8 @@ const galleryGroups = {
     "/assets/album/four/before_after_rooflight.jpg",
   ],
   group7: [
+    "/assets/album/six/before-and-after.png",
+    "/assets/album/six/before_after_window_collage.jpg",
     "/assets/album/six/IMG_5616.JPEG",
     "/assets/album/six/IMG_5617.JPEG",
     "/assets/album/six/IMG_5621.JPEG",
