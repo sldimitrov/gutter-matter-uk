@@ -31,7 +31,7 @@ const galleryItems = [
         id: 7,
         title: "Windows Cleaning",
         group: "group7",
-        front: "/assets/album/six/IMG_5621.JPEG",
+        front: "/assets/album/six/before-and-after.png",
         location: "Kent",
     },
 ];
