@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# vite-react-ssg build scratch dir (cleaned up on success, left behind on failure)
+.vite-react-ssg-temp
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +25,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.env
