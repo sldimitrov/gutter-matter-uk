@@ -17,6 +17,27 @@ import {
 } from "@/components/ui/form";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, CheckCircle2 } from "lucide-react";
+import Seo from "../components/Seo.tsx";
+
+// Vite inlines VITE_-prefixed vars into the bundle at build time, so these are public.
+// That is expected for EmailJS — the account is protected by the allowed-domains list in
+// the EmailJS dashboard, not by hiding the key. Never put a real secret behind VITE_.
+const {
+  VITE_EMAILJS_PUBLIC_KEY: PUBLIC_KEY,
+  VITE_EMAILJS_SERVICE_ID: SERVICE_ID,
+  VITE_EMAILJS_TEMPLATE_ID: TEMPLATE_ID,
+} = import.meta.env;
+
+const emailjsConfigured = Boolean(PUBLIC_KEY && SERVICE_ID && TEMPLATE_ID);
+
+if (!emailjsConfigured) {
+  // A missing env var yields undefined rather than an error, which would otherwise mean
+  // the form silently stops delivering enquiries in production while working locally.
+  console.error(
+    "EmailJS environment variables are missing — the contact form cannot send messages. " +
+      "Set VITE_EMAILJS_PUBLIC_KEY, VITE_EMAILJS_SERVICE_ID and VITE_EMAILJS_TEMPLATE_ID.",
+  );
+}
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters").max(100),
@@ -40,20 +61,28 @@ const Contact = () => {
   });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    if (!emailjsConfigured) {
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: "The contact form is unavailable right now. Please call us on 07586 366303.",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
-      emailjs.init("ZNA6rCUzJJOCR6CQq");
-
       await emailjs.send(
-          "service_1l3zhon",        // <- From EmailJS dashboard
-          "template_84nbcut",       // <- Your template
+          SERVICE_ID,
+          TEMPLATE_ID,
           {
             from_name: values.name,
             from_email: values.email,
             phone: values.phone,
             message: values.message,
-          }
+          },
+          { publicKey: PUBLIC_KEY }
       );
 
       toast({
@@ -76,6 +105,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen pt-20">
+      <Seo
+        title="Contact Gutter Matter | Free Gutter Cleaning Estimates"
+        description="Get a free, no-obligation gutter cleaning estimate in Tunbridge Wells. Call 07586 366303 or send us a message. 24-hour emergency callout available."
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/10 via-background to-background py-20">
         <div className="container mx-auto px-4">
@@ -175,7 +208,7 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-primary mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <a href="tel:+07586366303" className="text-primary hover:underline">
+                      <a href="tel:+447586366303" className="text-primary hover:underline">
                         07586366303
                       </a>
                       <p className="text-sm text-muted-foreground mt-1">24-hour emergency callout available</p>
@@ -195,7 +228,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Location</h3>
                       <p className="text-muted-foreground">Tunbridge Wells, Kent</p>
-                      <p className="text-sm text-muted-foreground mt-1">Serving surrounding areas</p>
+                      <p className="text-sm text-muted-foreground mt-1">Serving Kent and London</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -260,7 +293,7 @@ const Contact = () => {
             <div className="bg-muted rounded-lg h-96 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                <p className="text-lg font-semibold mb-2">Serving Tunbridge Wells & Surrounding Areas</p>
+                <p className="text-lg font-semibold mb-2">Serving Tunbridge Wells, Kent &amp; London</p>
                 <p className="text-muted-foreground">Contact us to check if we cover your area</p>
               </div>
             </div>

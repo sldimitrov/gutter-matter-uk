@@ -14,18 +14,34 @@ import {
   Camera,
   CheckCircle2,
 } from "lucide-react";
-import FrontImage from '/assets/gutter_matter_website_cover.png'
+import FrontImage from '/assets/gutter_matter_website_cover.webp';
+import Seo from "../components/Seo.tsx";
 
 const Home = () => {
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Gutter Cleaning & Repair in Tunbridge Wells | Gutter Matter"
+        description="Professional gutter cleaning, repair and installation in Tunbridge Wells. Fully insured to £5m, Checkatrade approved, 24-hour callout. Free estimates."
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
+          {/*
+            The LCP element — deliberately NOT lazy-loaded. fetchPriority="high" tells the
+            browser to fetch it ahead of other resources; width/height let it reserve the
+            aspect ratio before the file arrives.
+          */}
           <img
               src={FrontImage}
-              alt="Gutter Matter team working"
+              alt="Gutter Matter team cleaning gutters on a house in Tunbridge Wells"
+              width={1920}
+              height={1080}
+              // React 18 does not recognise the camelCase `fetchPriority` prop (React 19
+              // added it), so the lowercase HTML attribute is passed via spread.
+              {...{ fetchpriority: "high" }}
+              decoding="async"
               className="w-full h-full object-cover scale-105"
           />
           {/* Dark overlay for readability */}
@@ -35,8 +51,8 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Professional Gutter & Window Cleaning Services in{" "}
-              <span className="text-primary">Your Area</span>
+              Professional Gutter Cleaning & Repair in{" "}
+              <span className="text-primary">Tunbridge Wells</span>
             </h1>
 
             <p className="text-xl mb-8 max-w-2xl mx-auto text-white/90">
@@ -55,7 +71,7 @@ const Home = () => {
                   variant="outline"
                   className="text-lg px-8 border-white text-white bg-transparent hover:bg-white hover:text-black"
               >
-                <a href="tel:+07586366303">
+                <a href="tel:+447586366303">
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now
                 </a>
@@ -202,9 +218,9 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <MapPin className="w-12 h-12 text-primary mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Serving Tunbridge Wells & Surrounding Areas</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Serving Tunbridge Wells, Kent &amp; London</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Based in Tunbridge Wells, we provide professional guttering services throughout Kent and the surrounding areas. Both domestic and commercial work undertaken.
+              Based in Tunbridge Wells, we provide professional guttering services across Kent and London. Both domestic and commercial work undertaken.
             </p>
             <Button asChild size="lg">
               <Link to="/contact">Check If We Cover Your Area</Link>

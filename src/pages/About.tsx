@@ -1,8 +1,13 @@
 import { Badge, Shield, Award, Users, CheckCircle2 } from "lucide-react";
+import Seo from "../components/Seo.tsx";
 
 const About = () => {
   return (
     <div className="min-h-screen pt-20">
+      <Seo
+        title="About Gutter Matter Ltd | Tunbridge Wells Guttering Experts"
+        description="Gutter Matter Ltd is a Checkatrade-approved guttering company in Tunbridge Wells, serving Kent and London. Fully insured to £5m, domestic and commercial."
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/10 via-background to-background py-20">
         <div className="container mx-auto px-4">

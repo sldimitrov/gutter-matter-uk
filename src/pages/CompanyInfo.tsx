@@ -9,10 +9,15 @@ import {
   FileText,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Seo from "../components/Seo.tsx";
 
 const CompanyInfo = () => {
   return (
     <div className="min-h-screen pt-20">
+      <Seo
+        title="Company Information & Insurance | Gutter Matter Ltd"
+        description="Company details for Gutter Matter Ltd: £5m insurance cover, Checkatrade vetting, service areas across Kent and London, opening hours and payment methods."
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/10 via-background to-background py-20">
         <div className="container mx-auto px-4">
@@ -117,11 +122,11 @@ const CompanyInfo = () => {
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
-                    <span>Tunbridge Wells</span>
+                    <span>Kent</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
-                    <span>Surrounding Kent areas</span>
+                    <span>London</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
@@ -177,7 +182,7 @@ const CompanyInfo = () => {
                 <CardContent className="pt-6 text-center">
                   <Phone className="w-8 h-8 text-primary mx-auto mb-3" />
                   <p className="font-semibold mb-2">Call Us</p>
-                  <a href="tel:+07586366303" className="text-primary hover:underline">
+                  <a href="tel:+447586366303" className="text-primary hover:underline">
                     07586366303
                   </a>
                 </CardContent>

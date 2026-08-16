@@ -13,17 +13,24 @@ import {
   Wind,
   Building,
 } from "lucide-react";
+import Seo from "../components/Seo.tsx";
+import ServicesSchema from "../components/ServicesSchema.tsx";
 
 const Services = () => {
   return (
     <div className="min-h-screen pt-20">
+      <Seo
+        title="Gutter Cleaning, Repair & Fascia Services | Tunbridge Wells"
+        description="Internal gutter cleaning up to 4 storeys without scaffolding, plus gutter repair, replacement and fascia & soffit services across Tunbridge Wells and Kent."
+      />
+      <ServicesSchema />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/10 via-background to-background py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Professional Services</h1>
             <p className="text-xl text-muted-foreground">
-              Comprehensive guttering solutions for residential and commercial properties throughout Tunbridge Wells and surrounding areas
+              Comprehensive guttering solutions for residential and commercial properties across Kent and London
             </p>
           </div>
         </div>
@@ -145,7 +152,7 @@ const Services = () => {
                 <Link to="/contact">Request Free Estimate</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="tel:+07586366303">Call Us Today</a>
+                <a href="tel:+447586366303">Call Us Today</a>
               </Button>
             </div>
           </div>

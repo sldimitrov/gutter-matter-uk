@@ -3,12 +3,20 @@ import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import galleryGroups from "@/gallery/galleryImages";
 import galleryItems from "@/gallery/galleryItems";
+import Seo from "../components/Seo.tsx";
 
 const Gallery = () => {
   const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
 
+  const activeItem = galleryItems.find((item) => item.group === selectedGroup);
+  const activeImages = selectedGroup ? galleryGroups[selectedGroup] : [];
+
   return (
       <div className="min-h-screen pt-20">
+        <Seo
+          title="Our Guttering Work | Before & After Photos, Tunbridge Wells"
+          description="Before and after photos of gutter cleaning, repairs and fascia work across Tunbridge Wells and Kent, documented with our SkyJac inspection camera system."
+        />
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary/10 via-background to-background py-20">
           <div className="container mx-auto px-4">
@@ -34,7 +42,9 @@ const Gallery = () => {
                     <div className="relative">
                       <img
                           src={item.front}
-                          alt={item.title}
+                          alt={item.alt}
+                          loading="lazy"
+                          decoding="async"
                           className="w-full h-64 object-cover"
                       />
                       <div className="p-4">
@@ -55,11 +65,24 @@ const Gallery = () => {
             {selectedGroup && (
                 <div className="space-y-4">
                   <DialogTitle className="text-2xl font-bold">
-                    {galleryItems.find((item) => item.group === selectedGroup)?.title}
+                    {activeItem?.title}
                   </DialogTitle>
                   <div className="grid md:grid-cols-2 gap-4">
-                    {galleryGroups[selectedGroup].map((src, idx) => (
-                        <img key={idx} src={src} alt={`Gallery ${idx}`} className="w-full rounded-lg" />
+                    {/*
+                      Derived rather than hand-written: these 100+ images only enter the DOM
+                      after a click, so they are invisible to crawlers and the value here is
+                      accessibility. Position ("photo 3 of 58") is what a screen-reader user
+                      actually needs while moving through the lightbox.
+                    */}
+                    {activeImages.map((src, idx) => (
+                        <img
+                            key={src}
+                            src={src}
+                            alt={`${activeItem?.title} in ${activeItem?.location} — photo ${idx + 1} of ${activeImages.length}`}
+                            loading="lazy"
+                            decoding="async"
+                            className="w-full rounded-lg"
+                        />
                     ))}
                   </div>
                 </div>
