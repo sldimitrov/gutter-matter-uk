@@ -8,6 +8,7 @@ import { useScrollToTop } from "./hooks/use-scroll-top";
 
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import FloatingCallButton from "./components/layout/FloatingCallButton";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -36,6 +37,7 @@ function Layout() {
         <ScrollToTopWrapper />
         <Outlet />
         <Footer />
+        <FloatingCallButton />
       </TooltipProvider>
     </QueryClientProvider>
   );
