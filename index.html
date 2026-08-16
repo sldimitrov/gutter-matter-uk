@@ -3,29 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gutter Matter Ltd - Professional Guttering Services in Tunbridge Wells</title>
     <link rel="icon" href="/assets/favicon.ico">
-
-    <meta name="description" content="Professional gutter cleaning, repair, and installation in Tunbridge Wells. Fully insured to £5M. 24-hour callout. Free estimates. Internal gutter cleaning up to 4 storeys without scaffolding." />
     <meta name="author" content="Gutter Matter Ltd" />
-    <meta name="keywords" content="gutter cleaning Tunbridge Wells, gutter repair, fascia replacement, soffit cleaning, guttering services Kent, gutter installation, emergency gutter repair" />
 
-    <meta property="og:title" content="Gutter Matter Ltd - Professional Guttering Services" />
-    <meta property="og:description" content="Expert gutter cleaning, repair & installation in Tunbridge Wells. Fully insured to £5M with 24-hour emergency callout." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/logo.jpeg" />
+    <!--
+      This file is only the SPA/SSG template. Per-page <title>, description, canonical,
+      og: and twitter: tags are emitted by src/components/Seo.tsx via vite-react-ssg's
+      <Head>, and are baked into each generated HTML file at build time.
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Gutter Matter Ltd - Professional Guttering Services" />
-    <meta name="twitter:description" content="Expert gutter cleaning, repair & installation in Tunbridge Wells" />
-    <meta name="twitter:image" content="/assets/logo.jpeg" />
-    
-    <link rel="canonical" href="https://guttermatter.co.uk" />
+      Do NOT add URL-dependent meta tags here: this template is shared by every route, so
+      anything added here appears identically on all pages — and would be served as a
+      duplicate alongside the generated one.
+    -->
+
+    <!--
+      LocalBusiness structured data. Identical on every route, so it belongs here rather
+      than in Seo.tsx. Validate changes at https://search.google.com/test/rich-results
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://guttermatter.com/#business",
+      "name": "Gutter Matter Ltd",
+      "description": "Professional gutter cleaning, repair and installation based in Tunbridge Wells, serving Kent and London. Internal gutter cleaning up to 4 storeys without scaffolding.",
+      "url": "https://guttermatter.com",
+      "image": "https://guttermatter.com/assets/gutter_matter_og.jpg",
+      "logo": "https://guttermatter.com/assets/logo.jpeg",
+      "telephone": "+447586366303",
+      "founder": {
+        "@type": "Person",
+        "name": "Stoyan Velev"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Royal Tunbridge Wells",
+        "addressRegion": "Kent",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Kent" },
+        { "@type": "City", "name": "London" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "paymentAccepted": "Cash, Bank Transfer, Credit Card",
+      "currenciesAccepted": "GBP",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Guttering Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Internal Gutter Cleaning" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutter Repair & Replacement" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fascia & Soffit Services" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutter Guard Installation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Guttering Services" } }
+        ]
+      },
+      "sameAs": [
+        "https://www.checkatrade.com/trades/guttermatterltd",
+        "https://www.facebook.com/guttermatter"
+      ]
+    }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </body>
 </html>
