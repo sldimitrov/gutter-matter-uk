@@ -1,5 +1,7 @@
-import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
+import { ViteReactSSG } from "vite-react-ssg";
+import { routes } from "./App";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(<App />);
+// ViteReactSSG owns the router. At build time it walks `routes` and emits a static HTML
+// file per concrete path; in the browser the same entry hydrates the prerendered markup.
+export const createRoot = ViteReactSSG({ routes });
