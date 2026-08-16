@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,18 +10,14 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Gutter Matter Ltd</h3>
             <p className="text-background/80 text-sm mb-4">
-              Professional guttering services in Tunbridge Wells and surrounding areas. Fully insured up to £5,000,000.
+              Based in Tunbridge Wells, providing professional guttering services across Kent and London. Fully insured up to £5,000,000.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/guttermatter" target="_blank" className="text-background/80 hover:text-background transition-colors">
+              <a href="https://www.facebook.com/guttermatter" target="_blank" rel="noopener noreferrer" aria-label="Gutter Matter on Facebook" className="text-background/80 hover:text-background transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              {/*<a href="#" className="text-background/80 hover:text-background transition-colors">*/}
-              {/*  <Instagram className="w-5 h-5" />*/}
-              {/*</a>*/}
-              {/*<a href="#" className="text-background/80 hover:text-background transition-colors">*/}
-              {/*  <Linkedin className="w-5 h-5" />*/}
-              {/*</a>*/}
+              {/* To add Instagram/LinkedIn: import the icon from lucide-react and copy the
+                  Facebook anchor above — keep rel="noopener noreferrer" and the aria-label. */}
             </div>
           </div>
 
@@ -79,7 +75,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Phone className="w-5 h-5 mr-2 flex-shrink-0 text-background/80" />
-                <a href="tel:+07586366303" className="text-background/80 hover:text-background transition-colors">
+                <a href="tel:+447586366303" className="text-background/80 hover:text-background transition-colors">
                   07586366303
                 </a>
               </li>
@@ -98,7 +94,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm text-background/80">
-          <p>&copy; {new Date().getFullYear()} Gutter Matter Ltd. All rights reserved. VAT Registered. Fully Insured to £5,000,000.</p>
+          <p>&copy; {new Date().getFullYear()} Gutter Matter Ltd. All rights reserved. VAT-free. Fully Insured to £5,000,000.</p>
         </div>
       </div>
     </footer>
