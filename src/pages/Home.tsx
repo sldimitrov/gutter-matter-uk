@@ -78,6 +78,16 @@ const Home = () => {
               </Button>
             </div>
 
+            <p className="mt-6 text-white/90">
+              <a href="tel:+447586366303" className="underline hover:text-primary transition-colors">
+                07586 366303
+              </a>
+              &nbsp;|&nbsp;
+              <a href="tel:+441892335951" className="underline hover:text-primary transition-colors">
+                01892 335951
+              </a>
+            </p>
+
             <div className="mt-10 flex flex-wrap justify-center gap-6 text-sm text-white/90">
               <div className="flex items-center">
                 <CheckCircle2 className="w-5 h-5 text-green-400 mr-2" />

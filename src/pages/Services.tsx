@@ -155,6 +155,11 @@ const Services = () => {
                 <a href="tel:+447586366303">Call Us Today</a>
               </Button>
             </div>
+            <p className="mt-6 text-muted-foreground">
+              <a href="tel:+447586366303" className="hover:underline">07586 366303</a>
+              &nbsp;|&nbsp;
+              <a href="tel:+441892335951" className="hover:underline">01892 335951</a>
+            </p>
           </div>
         </div>
       </section>

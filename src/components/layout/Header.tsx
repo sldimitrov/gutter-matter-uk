@@ -58,10 +58,16 @@ const Header = () => {
           </nav>
 
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:+447586366303" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
-              <Phone className="w-4 h-4 mr-2" />
-              Call Us Today
-            </a>
+            <div className="flex flex-col text-sm text-muted-foreground">
+              <a href="tel:+447586366303" className="flex items-center hover:text-primary transition-colors">
+                <Phone className="w-4 h-4 mr-2" />
+                07586 366303
+              </a>
+              <a href="tel:+441892335951" className="flex items-center hover:text-primary transition-colors">
+                <Phone className="w-4 h-4 mr-2" />
+                01892 335951
+              </a>
+            </div>
             <Button asChild variant="default">
               <Link to="/contact">Free Estimate</Link>
             </Button>
@@ -105,7 +111,14 @@ const Header = () => {
                   className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Phone className="w-4 h-4 mr-2" />
-                  Call Us Today
+                  07586 366303
+                </a>
+                <a
+                  href="tel:+441892335951"
+                  className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Phone className="w-4 h-4 mr-2" />
+                  01892 335951
                 </a>
                 <Button asChild variant="default" className="w-full">
                   <Link to="/contact">Free Estimate</Link>

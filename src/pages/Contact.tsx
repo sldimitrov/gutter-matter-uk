@@ -208,8 +208,11 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-primary mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <a href="tel:+447586366303" className="text-primary hover:underline">
+                      <a href="tel:+447586366303" className="text-primary hover:underline block">
                         07586366303
+                      </a>
+                      <a href="tel:+441892335951" className="text-primary hover:underline block">
+                        01892335951
                       </a>
                       <p className="text-sm text-muted-foreground mt-1">24-hour emergency callout available</p>
                     </div>
