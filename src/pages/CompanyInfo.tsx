@@ -182,8 +182,11 @@ const CompanyInfo = () => {
                 <CardContent className="pt-6 text-center">
                   <Phone className="w-8 h-8 text-primary mx-auto mb-3" />
                   <p className="font-semibold mb-2">Call Us</p>
-                  <a href="tel:+447586366303" className="text-primary hover:underline">
+                  <a href="tel:+447586366303" className="text-primary hover:underline block">
                     07586366303
+                  </a>
+                  <a href="tel:+441892335951" className="text-primary hover:underline block">
+                    01892335951
                   </a>
                 </CardContent>
               </Card>
